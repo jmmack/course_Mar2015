@@ -9,18 +9,21 @@ data("selex")
 
 #format into matrix of read counts
 countsTable <- data.matrix(selex,rownames.force=NA)
+
 #make table of conditions in same order as columns of counts table
-#i.e. the first 7 samples are "N" condtion and the next 7 samples are "S" condition
+#i.e. the first 7 samples are "N" condition and the next 7 samples are "S" condition
 coldata <- data.frame(condition=factor(c(rep("N",7), rep("S", 7))))
 
 #DESeq2 formats data from a matrix of read counts
 dds <- DESeqDataSetFromMatrix(countData=countsTable, colData=coldata, design = ~condition)
 
+#See documentation for fit types
 ddsoutput <- DESeq(dds, fitType="local")
 
-res2 <- results(ddsoutput)
+#get results
+res <- results(ddsoutput)
 
+#summarize results
+summary(res)
 
 plotMA(ddsoutput)
-
-
