@@ -1,6 +1,14 @@
 # Basic DESeq2 commands for a read counts table
 # Using the selex dataset from ALDEx2
 
+#DESEq2 is a Bioconductor package available here:
+#http://www.bioconductor.org/packages/release/bioc/html/DESeq2.html
+
+# Please see the Bioconductor page for the manual and install instructions
+
+
+#load libraries for DESeq2 and ALDEx2
+#ALDEx2 contains the selex dataset
 library(DESeq2)
 library(ALDEx2)
 
@@ -26,4 +34,15 @@ res <- results(ddsoutput)
 #summarize results
 summary(res)
 
+#Look 
 plotMA(ddsoutput)
+
+
+#----------------------------------------------------------------------------------------
+# Another way to load data (from a tab-delimited, plaintext table)
+# This would replace data("selex")
+
+#The pasilla dataset is available from:
+#http://bioconductor.org/packages/2.11/data/experiment/html/pasilla.html
+
+d<-read.table("pasilla.txt", sep="\t", quote="", check.names=F, header=T, row.names=1)
