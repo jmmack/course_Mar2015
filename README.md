@@ -1,4 +1,5 @@
-# example-scripts
+# course_Mar2015
+
 
 pasilla.txt was acquired from: http://bioconductor.org/packages/2.11/data/experiment/html/pasilla.html
 - Click the filename
@@ -10,3 +11,8 @@ deseq2example.R
 
 aldex2example.R
 - Example R commands to run one method of ALDex2
+
+**Annotation directory**
+- annotation_slides.pdf
+- annotation_examples.txt - Example features to annotate
+- wisdomofcrowds.pdf - Network analysis paper
