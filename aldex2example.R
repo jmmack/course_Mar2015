@@ -34,3 +34,12 @@ x.all <- data.frame(x.tt, x.effect)
 
 #write a .txt with your results
 write.table(x.all, file="aldex_ttest.txt", sep="\t", quote=F, col.names=NA)
+
+#See plots
+pdf("MA.pdf")
+aldex.plot(x.all, type="MA", test="welch")
+dev.off()
+
+pdf("MW.pdf")
+aldex.plot(x.all, type="MW", test="welch")
+dev.off()
