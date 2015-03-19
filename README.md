@@ -1,6 +1,7 @@
 # course_Mar2015
 
-By: Greg Gloor at Western University, London, Canada
+Course by: Greg Gloor at Western University, London, Canada
+Repositroy by: Jean M Macklaim at Western University, London, Canada
 
 
 pasilla.txt was acquired from: http://bioconductor.org/packages/2.11/data/experiment/html/pasilla.html
