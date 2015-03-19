@@ -1,5 +1,7 @@
 # course_Mar2015
 
+By: Greg Gloor at Western University, London, Canada
+
 
 pasilla.txt was acquired from: http://bioconductor.org/packages/2.11/data/experiment/html/pasilla.html
 - Click the filename
